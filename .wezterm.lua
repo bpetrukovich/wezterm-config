@@ -15,16 +15,17 @@ return {
 
 	-- ctrl + shift + p = powershell
 	keys = {
-    {
-      key = 'p',
-      mods = 'CTRL|SHIFT',
-      action = wezterm.action.SpawnCommandInNewTab {
-        domain = { DomainName = 'local' },
-		args = { 'powershell.exe' },
-      },
-    },
-  },
+		{
+			key = "p",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.SpawnCommandInNewTab({
+				domain = { DomainName = "local" },
+				args = { "powershell.exe" },
+			}),
+		},
+	},
 
 	-- default_prog = { "wsl.exe", "-d", "fish-wsl", "fish", "-c", "cd ~; tmux" }
 	default_domain = "WSL:fish-wsl",
 }
+
